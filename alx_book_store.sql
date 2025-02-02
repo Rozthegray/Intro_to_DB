@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS customers (
     address TEXT NOT NULL
 );
 
--- Create Orders table
+-- Create Orders table (✅ Fixed: Added FOREIGN KEY for `customer_id`)
 CREATE TABLE IF NOT EXISTS orders (
     order_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT,
